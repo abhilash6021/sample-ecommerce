@@ -25,10 +25,10 @@ const Header = ({currentUser}) => (
   </div>
 );
 
-const mapStateToprops = state =>({
+const mapStateToProps = state =>({
 
   currentUser: state.user.currentUser
 
 
 })
-export default connect(mapStateToprops)(Header);
+export default connect(mapStateToProps)(Header);
